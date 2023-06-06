@@ -1,1 +1,29 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email Marketing Tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Email Marketing Tool</h1>
+      <form id="emailForm">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" required></textarea><br><br>
+        
+        <label for="recipientList">Recipients:</label><br>
+        <textarea id="recipientList" required></textarea><br><br>
+        
+        <label for="fileInput">Upload File:</label>
+        <input type="file" id="fileInput" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"><br><br>
+        
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
